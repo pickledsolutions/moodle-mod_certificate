@@ -20,15 +20,15 @@
  *
  * @package    mod_certificate
  * @copyright  Mark Nelson <markn@moodle.com>
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or late
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2020082500; // The current module version (Date: YYYYMMDDXX)
-$plugin->requires  = 2016052300; // Requires this Moodle version (3.1)
+$plugin->version   = 2025100100; // The current module version (Date: YYYYMMDDXX)
+$plugin->requires  = 2022112800; // Requires Moodle 4.1 (2022112800)
 $plugin->cron      = 0; // Period for cron to check this module (secs)
 $plugin->component = 'mod_certificate';
 
 $plugin->maturity  = MATURITY_STABLE;
-$plugin->release   = "Master (Build: 2020082500)"; // User-friendly version number
+$plugin->release   = "Moodle 4.1 compatibility update (Build: 2025100100)"; // User-friendly version number

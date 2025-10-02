@@ -1,0 +1,7 @@
+# Ignore local patch files
+*.patch
+
+# Optional: ignore backup files and temp files
+*.bak
+*.tmp
+*~
