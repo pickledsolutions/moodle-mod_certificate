@@ -1,47 +1,23 @@
+diff --git a/lib.php b/lib.php
 --- a/lib.php
 +++ b/lib.php
-@@ -245,11 +245,10 @@
+@@ -245,11 +245,10 @@ function certificate_supports($feature) {
      switch ($feature) {
  
          case FEATURE_GROUPS:                  return true;
- 
          case FEATURE_GROUPINGS:               return true;
- 
 -        case FEATURE_GROUPMEMBERSONLY:        return true;
- 
          case FEATURE_MOD_INTRO:               return true;
- 
 +        case FEATURE_SHOW_DESCRIPTION:        return true;
- 
          case FEATURE_COMPLETION_TRACKS_VIEWS: return true;
- 
          case FEATURE_BACKUP_MOODLE2:          return true;
- 
          default: return null;
-@@ -259,3 +258,3 @@
+     }
  }
+diff --git a/version.php b/version.php
 --- a/version.php
 +++ b/version.php
-@@ -1,40 +1,40 @@
- <?php
- 
- // This file is part of the Certificate module for Moodle - http://moodle.org/
- //
- // Moodle is free software: you can redistribute it and/or modify
- // it under the terms of the GNU General Public License as published by
- // the Free Software Foundation, either version 3 of the License, or
- // (at your option) any later version.
- //
- // Moodle is distributed in the hope that it will be useful,
- // but WITHOUT ANY WARRANTY; without even the implied warranty of
- // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- // GNU General Public License for more details.
- //
- // You should have received a copy of the GNU General Public License
- // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
- 
- /**
-  * Version details
+@@ -19,7 +19,7 @@
   *
   * @package    mod_certificate
   * @copyright  Mark Nelson <markn@moodle.com>
@@ -50,6 +26,7 @@
   */
  
  defined('MOODLE_INTERNAL') || die();
+@@ -27,10 +27,10 @@ defined('MOODLE_INTERNAL') || die();
  
 -$plugin->version   = 2020082500; // The current module version (Date: YYYYMMDDXX)
 -$plugin->requires  = 2016052300; // Requires this Moodle version (3.1)
@@ -61,4 +38,3 @@
  $plugin->maturity  = MATURITY_STABLE;
 -$plugin->release   = "Master (Build: 2020082500)"; // User-friendly version number
 +$plugin->release   = "Moodle 4.1 compatibility update (Build: 2025100100)"; // User-friendly version number
- 
